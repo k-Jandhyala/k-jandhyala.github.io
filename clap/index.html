@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>clap</title>
+</head>
+
+<body>
+  <div id="english">
+    <H1>Push the button below to clap</H1>
+    <hr>
+    <button onclick="playAudio()">Clap!</button>
+  </div>
+
+  <script>
+    var audio = new Audio('clap.mp3');
+
+    function playAudio(){
+      audio.play();
+    }
+  </script>
+</body>

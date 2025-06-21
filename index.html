@@ -1,26 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-  <meta charset="utf-8">
-  <title>Koushik Jandhyala</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koushik J. - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js">6</script>
 </head>
-
 <body>
-  <div id="english">
-    <H1>Koushik Jandhyala</H1>
-    <hr>
-    <H2>About Me </H2>
-    <p>Hey! It's Koushik, a developer from Califorina, USA. I love messing around with coding langugages, tinkering with computers, and doing what ever interests me at that moment.
-      Here is a cataloge of all I have done
-    </p>
-    <button onclick="LinkedIn()">LinkedIn</button>
-  </div>
+  <header>
+    <div><strong><span class="headerName">Koushik J.</span></strong></div>
+    <nav>
+      <a href="#" class="activePage">home</a>
+      <a href="#about">about me</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="cv-btn">📥 Download My CV</button>
+  </header>
 
-  <script>
-    function LinkedIn(){
-      window.open("www.linkedin.com/in/koushik-jandhyala", "_blank");
-    }
-  </script>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="tag">👋 Hello</div>
+      <h1>I'm Koushik,</h1>
+      <p>Driven by problems.<br>Defined by perspective.</p>
+
+      <div class="btn-group">
+        <a href="#about" class="btn btn-filled">About me 🟡</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-container">
+        <img src="personalPicNoBg.png" alt="Koushik" class="hero-image" />
+        
+        <div class="floating-bubble bubble-1">🔔 Technology</div>
+        <div class="floating-bubble bubble-2">🎨 Design</div>
+        <div class="floating-bubble bubble-3" onclick="window.open('https://www.roboravens.com');">🤖 Robotics</div>
+        <
+        <div class="floating-bubble bubble-4">💡 Innovation</div>
+        <div class="floating-bubble bubble-5">🎓 UC Riverside '29</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h3>About Me</h3>
+        <h4>I mean I did use AI, but its fine as long as you get the point</h4>
+        <p>I'm a passionate technologist and problem solver who thrives on turning complex challenges into elegant solutions. With a background spanning robotics, web development, and space technology, I bring a unique perspective to every project.</p>
+        <p>My journey has taken me from building micro-satellites that caught MIT faculty attention to creating interactive web experiences. I believe in the power of perspective to drive innovation and the importance of asking the right questions.</p>
+        <p>When I'm not coding or tinkering with hardware, you'll find me exploring new technologies, contributing to open-source projects, or mentoring fellow developers.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="icon">💻</div>
+          <h4>Computer Programming</h4>
+        </div>
+        <div class="skill-item">
+          <div class="icon">🤖</div>
+          <h4>Robotics</h4>
+        </div>
+        <div class="skill-item">
+          <div class="icon">🛰️</div>
+          <h4>Aerospace Engineering</h4>
+        </div>
+        <div class="skill-item">
+          <div class="icon">🎨</div>
+          <h4>Creative Thinking</h4>
+        </div>
+        <div class="skill-item">
+          <div class="icon">(🧮)</div>
+          <h4>IoT Development</h4>
+        </div>
+        <div class="skill-item">
+          <div class="icon">📊</div>
+          <h4>Data Analysis</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>My Favorite Projects</h2>
+    <h4>See All →</h4>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Personal Website</h3>
+          <p>This very website you are on. Built with modern web technologies, featuring smooth animations and responsive design. A showcase of clean code and thoughtful user experience.</p>
+          <a href="#">View Project →</a>
+        </div>
+        <img src="https://i.imgur.com/9cU3FvN.png" alt="Personal Website" class="project-image" />
+      </div>
+      
+      <div class="project-card">
+        <div class="project-content">
+          <h3>CubeSats</h3>
+          <p>Micro-satellites project that received recognition from MIT Faculty. Developed a comprehensive proposal submitted to NASA for potential space deployment, showcasing innovative satellite technology.</p>
+          <a href="#">View Project →</a>
+        </div>
+        <img src="https://i.imgur.com/VQSPoQC.png" alt="CubeSats" class="project-image" />
+      </div>
+      
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Simon Says Arduino</h3>
+          <p>A nostalgic childhood game reimagined for the digital age. Built using Arduino with LED sequences, sound effects, and progressive difficulty levels that challenge memory and reflexes.</p>
+          <a href="#">View Project →</a>
+        </div>
+        <img src="https://i.imgur.com/Pr3GlnM.png" alt="Simon Says" class="project-image" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <h2>Let's Connect?</h2>
+    <p>wanna work on any cool projects? need college advice? at UCR and wanna hangout? anything else?... REACH OUT</p>
+    <div class="contact-buttons">
+      <a href="https://www.instagram.com/koushik.jandhyala/" class="contact-btn">📷 Instagram</a>
+      <a href="https://www.linkedin.com/in/koushik-jandhyala/" class="contact-btn">💼 LinkedIn</a>
+      <a href="https://github.com/k-Jandhyala" class="contact-btn">👨‍💻 GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Koushik J. Crafted with passion, precision. Add a whole lot of coding with a dash of raging because every now and then the code deicides not work</p>
+  </footer>
 </body>
+</html>
